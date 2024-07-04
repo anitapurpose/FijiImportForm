@@ -1,22 +1,20 @@
-<section class="section">
-  <div class="container">
-    <h1 class="title">Daily Water Calculator</h1>
-    <p>Enter the number of people: </p>
-    <form id="waterForm">
-      <div class="field">
-        <label for="numPeople" class="label">Number of People</label>
-        <div class="control">
-          <input type="number" id="numPeople" class="input" min="1" required>
-        </div>
-      </div>
-      <button type="submit" class="button is-primary" onclick="calculateWater()">Calculate</button>
-    </form>
-    <p id="waterOutput"></p>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container has-text-centered">
-    <a href="index.html" class="button is-info">Go Back to Homepage</a>
-  </div>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Water Calculator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.1/css/bulma.min.css">
+  <script src="water.js"></script>
+</head>
+<body>
+  <h1>Daily Water Calculator</h1>
+  <p>Enter the number of people: </p>
+  <input type="number" id="numPeople" min="1">
+  <button onclick="calculateWater()">Calculate</button>
+  <p id="waterOutput"></p>
+<br>
+<br>
+   <a href="index.html">Go Back to Homepage</a>
+</body>
+</html>
