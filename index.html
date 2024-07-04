@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fiji Import Duty/Tax Calculator</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+  <h1>Fiji Import Duty/Tax Calculator</h1>
+  <form id="calculator-form">
+    <label for="item-cost">Enter total item cost (including shipping) in FJD:</label>
+    <input type="number" id="item-cost" name="item-cost" min="0" required class="rounded">
+    <br>
+    <button type="submit">Calculate</button>
+  </form>
+  <div id="results"></div>
+  <script src="script.js"></script>
+</body>
+</html>
